@@ -1,0 +1,4 @@
+embedding_size choice [32, 64]
+train_rec_step choice [2, 5]
+train_kg_step choice [2, 5]
+kg_weight choice [0.5, 1]

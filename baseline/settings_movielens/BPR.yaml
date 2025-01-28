@@ -1,0 +1,15 @@
+LABEL_FIELD: label
+benchmark_filename:
+- train
+- valid
+- test
+checkpoint_dir: saved_movielens
+data_path: dataset/
+dataset: movielens
+epochs: 50
+eval_step: 1
+learner: adam
+learning_rate: 0.001
+model: BPR
+seed: 42
+train_batch_size: 1024

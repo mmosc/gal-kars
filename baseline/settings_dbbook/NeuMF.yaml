@@ -1,0 +1,16 @@
+LABEL_FIELD: label
+benchmark_filename:
+- train
+- valid
+- test
+checkpoint_dir: saved_dbbook
+data_path: dataset/
+dataset: dbbook
+epochs: 50
+eval_step: 1
+learner: adam
+learning_rate: 0.001
+model: NeuMF
+seed: 42
+stopping_step: 10000
+train_batch_size: 1024

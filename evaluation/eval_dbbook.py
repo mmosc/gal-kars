@@ -18,7 +18,6 @@ def eval(dataset='', prediction_type_model='', ks=5, relevant_threshold=1):
         prediction_dest_results = f'results/{dataset}/uni/'
 
     # files to be evaluated
-    # preds_fold = f'{prediction_type_model}/{dataset}'
     prediction_list = [x for x in os.listdir(f'{preds_fold}') if f'top{ks}' in x]
     print('Predictions to be evaluated:', prediction_list)
 
@@ -100,10 +99,10 @@ def eval(dataset='', prediction_type_model='', ks=5, relevant_threshold=1):
 relevant_threshold=1
 
 # dataset ranges in ['ml1m', 'dbbook']
-# prediction_type_model ranges in ['getall', 'baselines']
+# prediction_type_model ranges in ['recsys', 'baselines']
 
 for dataset in ['dbbook']:
-    for prediction_type_model in ['getall']:
+    for prediction_type_model in ['recsys']:
 
         eval(dataset, prediction_type_model, ks=5, relevant_threshold=1)
 

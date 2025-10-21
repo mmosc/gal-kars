@@ -79,7 +79,7 @@ python dbbook_infer_user.py
 
 # process the results
 python process_item_triples.py
-python process_user_triples.py
+python process_user_triples.pyma
 ```
 
 ### Step 3: KGE module

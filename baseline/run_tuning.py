@@ -24,16 +24,16 @@ def run_hyper(dataset, model_name):
 with open('log.txt', 'a') as fout:
     fout.write('\n----\n\n')
 
-models = [
-            'BPR', 'EASE', 'ItemKNN', 'LightGCN', 'MultiVAE', 
-            'NeuMF', 'NGCF', 'SLIMElastic', 'SGL',
-
-            'CFKG_inner', 'CFKG_transe', 'CKE', 'KGCN',
-            'KGNNLS', 'KTUP', 'MKR', 'KGAT', 'KGIN',
-
-            ]
+models = ['BPR']
+            # 'BPR', 'EASE', 'ItemKNN', 'LightGCN', 'MultiVAE',
+            # 'NeuMF', 'NGCF', 'SLIMElastic', 'SGL',
+            #
+            # 'CFKG_inner', 'CFKG_transe', 'CKE', 'KGCN',
+            # 'KGNNLS', 'KTUP', 'MKR', 'KGAT', 'KGIN',
+            #
+            # ]
             
-datasets = ['movielens', 'dbbook']
+datasets = ['lfm-2b']
 
 for model in models:  
     for dataset in datasets:
